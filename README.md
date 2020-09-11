@@ -3,11 +3,9 @@
 API steps through the Fibonacci sequence.  
 It runs on `localhost:8080` with three endpoints:
 ```
-{
 \current
 \next
 \previous
-}
 ```
 
 `\current` returns the current number in Fibonacci sequence, beginning on 0  
