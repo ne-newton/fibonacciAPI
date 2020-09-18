@@ -28,4 +28,6 @@ These can be retreived by running `go get github.com/gin-gonic/gin`, `go get git
 
 A macOS precompiled binary is available, which can be run `./fibonaccAPI` from the same directory. Then navigating to `localhost:8080\{endpoint}` to use.  
 
-Otherwise, the api can be built through `go build` from the project directory, or `go run main.go fibonacci.go api.go db.go` to run without building
+Otherwise, the api can be built through `go build` from the project directory, or `go run main.go fibonacci.go api.go db.go` to run without building  
+
+Tests added for fibonacci methods, to test run `go test`
