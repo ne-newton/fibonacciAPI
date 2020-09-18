@@ -18,6 +18,7 @@ func (f *fibonacci) current() uint64 {
 // replaces the current number in the fibonacci sequence with the current + previous
 // replaces the previous number with the former current number, then returns the new current
 // if both current and previous are 0, current is changed to 1 to start sequence
+// will return overflow error if next would exceed uint64 size
 func (f *fibonacci) next() (uint64, error) {
 	if f.Current > (math.MaxUint64 - f.Previous) {
 		return f.Current, errors.New("fibonacci: int overflow")
