@@ -9,7 +9,7 @@ It runs on `localhost:8080` with three endpoints:
 ```
 
 `\current` returns the current number in Fibonacci sequence, beginning on 0  
-`\next` returns the next number in the Fibonacci sequence, after 1, then 1, 2, 3, 5 ... and sets current to that number. Will return an error if int overflows, and will not move forward to next number in sequence.
+`\next` returns the next number in the Fibonacci sequence, after 1, then 1, 2, 3, 5 ... and sets current to that number. Will return an error if int overflows, and will not move forward to next number in sequence.  
 `\previous` moves back throught the sequence, setting current to that number. If trying to go to a number previous to 0, it will return an error.  
 Each endpoint returns it's name plus the number from the sequence, eg `current -> 0`, `next -> 1`.
 
