@@ -8,9 +8,9 @@ import (
 
 // gorm fibonacci database model
 type FibDB struct {
-	ID       uint `gorm:"primary_key"`
-	Current  int
-	Previous int
+	ID       uint8 `gorm:"primary_key"`
+	Current  uint64
+	Previous uint64
 }
 
 // checks to see if DB exists, if not creates it.
@@ -44,7 +44,7 @@ func checkDB() {
 
 // writes values of current and previous fibonacci numbers to database
 // logs error if write process fails.
-func writeToDB(current, previous int) {
+func writeToDB(current, previous uint64) {
 	var fibWrite = FibDB{1, current, previous}
 	if err := DB.Model(&FibDB{ID: 1}).Update(fibWrite).Error; err != nil {
 		log.Println(err)
