@@ -13,7 +13,7 @@ It runs on `localhost:8080` with three endpoints:
 `\previous` moves back throught the sequence, setting current to that number. If trying to go to a number previous to 0, it will return an error.  
 Each endpoint returns it's name plus the number from the sequence, eg `current -> 0`, `next -> 1`.
 
-##files
+## files
 main.go runs the server
 fibonacci.go contains the fibonnaci struct and methods  
 api.go contains the endpoint functions for the server
